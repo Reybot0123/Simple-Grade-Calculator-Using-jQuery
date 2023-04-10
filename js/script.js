@@ -21,9 +21,9 @@ $(document).ready(function(){
 		
 		var sum = eval(grades.join('+')), avg = sum / grades.length;
 		if(avg >= 75){
-			$('#result').html("<center>You're grade is <label class='text-primary'>"+ avg.toFixed(0) +"</label> <label class='text-success'>You passed!</label></center>");
+			$('#result').html("<center>Your grade is <label class='text-primary'>"+ avg.toFixed(0) +"</label> <label class='text-success'>You passed!</label></center>");
 		}else if(avg < 75){
-			$('#result').html("<center>You're grade is <label class='text-primary'>"+ avg.toFixed(0) +"</label> <label class='text-danger'>You failed!</label></center>");
+			$('#result').html("<center>Your grade is <label class='text-primary'>"+ avg.toFixed(0) +"</label> <label class='text-danger'>You failed!</label></center>");
 		}
 	});
 });
